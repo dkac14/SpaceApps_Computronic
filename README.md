@@ -1,103 +1,93 @@
-# 🚀 SpaceApps Computronic
+# 🚀 SpaceApps Computronic (English Translation)
 
-Este proyecto fue desarrollado para el **NASA Space Apps Challenge**.  
-El objetivo es crear un **dashboard interactivo impulsado por IA** que permita explorar, resumir y visualizar publicaciones científicas relacionadas con experimentos biológicos en el espacio.
+This project was developed for the **NASA Space Apps Challenge**.  
+The goal is to create an **AI-powered interactive dashboard** that allows users to explore, summarize, and visualize scientific publications related to biological experiments conducted in space.
 
 ---
 
-## 🧩 Estructura del Proyecto
+## 🧩 Project Structure
 ``` bash
 SPACEAPPS_COMPUTRONIC/
-├── .venv/ # Entorno virtual de Python
-├── node_modules/ # Dependencias de Node.js
+├── .venv/                    # Python virtual environment
+├── node_modules/             # Node.js dependencies
 ├── tu-proyecto/
-│ └── backend/
-│ ├── pycache/ # Caché de Python
-│ ├── .venv/ # Entorno virtual (backend)
-│ ├── data/
-│ │ └── SB_publication_PMC.csv # Fuente de datos (publicaciones NASA/PMC)
-│ ├── .env # Variables de entorno (API keys, configuraciones)
-│ ├── requirements.txt # Dependencias del backend (FastAPI, OpenAI, etc.)
-│ ├── server.py # Servidor principal (FastAPI)
-│ └── summary.py # Módulo para generar resúmenes con IA
+│   └── backend/
+│       ├── __pycache__/      # Python cache
+│       ├── .venv/            # Virtual environment (backend)
+│       ├── data/
+│       │   └── SB_publication_PMC.csv  # Data source (NASA/PMC publications)
+│       ├── .env              # Environment variables (API keys, configs)
+│       ├── requirements.txt  # Backend dependencies (FastAPI, OpenAI, etc.)
+│       ├── server.py         # Main server (FastAPI)
+│       └── summary.py        # Module for generating AI summaries
 ├── src/
-│ ├── api/ # Lógica de comunicación con el backend
-│ ├── components/ # Componentes principales del frontend
-│ │ ├── ArticlePage.tsx
-│ │ ├── SummaryPage.tsx
-│ │ ├── WelcomePageES.tsx
-│ │ ├── WelcomePageFormal.tsx
-│ │ └── WelcomeScreen.tsx
-│ ├── App.tsx # Componente raíz de React
-│ ├── index.css # Estilos globales
-│ └── main.tsx # Punto de entrada del frontend
-├── eslint.config.js # Configuración de ESLint
-├── index.html # Archivo HTML principal
-├── package.json # Dependencias de Node.js
-├── pnpm-lock.yaml # Bloqueo de versiones de PNPM
-├── postcss.config.js # Configuración de PostCSS
-├── tailwind.config.js # Configuración de TailwindCSS
-├── tsconfig.*.json # Configuraciones de TypeScript
-├── vite.config.ts # Configuración del entorno Vite
-└── README.md # Documentación del proyecto
-``` 
+│   ├── api/                  # Backend communication logic
+│   ├── components/           # Main frontend components
+│   │   ├── ArticlePage.tsx
+│   │   ├── SummaryPage.tsx
+│   │   ├── WelcomePageES.tsx
+│   │   ├── WelcomePageFormal.tsx
+│   │   └── WelcomeScreen.tsx
+│   ├── App.tsx               # Root React component
+│   ├── index.css             # Global styles
+│   └── main.tsx              # Frontend entry point
+├── eslint.config.js          # ESLint configuration
+├── index.html                # Main HTML file
+├── package.json              # Node.js dependencies
+├── pnpm-lock.yaml            # PNPM version lock
+├── postcss.config.js         # PostCSS configuration
+├── tailwind.config.js        # TailwindCSS configuration
+├── tsconfig.*.json           # TypeScript configurations
+├── vite.config.ts            # Vite environment setup
+└── README.md                 # Project documentation
+```
 ---
 
-## ⚙️ Instalación y Configuración
+## ⚙️ Installation and Setup
 
-### 1️⃣ Clonar el repositorio
-```bash
-git clone https://github.com/tu-usuario/spaceapps_computronic.git
+### 1️⃣ Clone the repository
+``` bash
+git clone https://github.com/your-username/spaceapps_computronic.git
 cd spaceapps_computronic
 ```
-### 2️⃣ Configurar el entorno virtual (Backend)
-
-```bash
+### 2️⃣ Set up the virtual environment (Backend)
+``` bash
 cd tu-proyecto/backend
 python -m venv .venv
 ```
-
-En Windows (CMD):
+For Windows (CMD):
 ``` bash
 .venv\Scripts\Activate.ps1
-
-```
-
-En Linux / Mac:
+``` 
+For Linux / Mac:
 ``` bash
 .venv\Scripts\activate.bat
 ```
-
-
-### 3️⃣ Instalar dependencias del backend
+### 3️⃣ Install backend dependencies
 ``` bash
 pip install -r requirements.txt
-```
-
-### 4️⃣ Configurar variables de entorno
-
-Crea un archivo llamado .env dentro de la carpeta backend/ con el siguiente contenido:
-
-``` bash
-API_KEY=tu_api_key_de_openai
 ``` 
-⚠️ **IMPORTANTE**: reemplaza tu_api_key_de_openai con tu clave real de OpenAI o de OpenRouter si usas ese servicio.
+### 4️⃣ Configure environment variables
 
-### 5️⃣ Ejecutar el backend (FastAPI)
+Create a file named .env inside the backend/ folder with the following content:
+``` bash
+API_KEY=your_openai_api_key
+```
+⚠️ **IMPORTANT**: Replace your_openai_api_key with your actual OpenAI key, or your OpenRouter key if you’re using that service.
+
+### 5️⃣ Run the backend (FastAPI)
 ``` bash
 uvicorn server:app --reload --port 8000
 ```
-
-El backend se ejecutará en:
+The backend will run at:
 👉 http://127.0.0.1:8000
 
-### 6️⃣ Instalar dependencias del frontend
-Desde la raíz del proyecto:
+### 6️⃣ Install frontend dependencies
+From the project root:
 ``` bash
 npm install
 ```
-
-### 7️⃣ Ejecutar la aplicación (Frontend)
+### 7️⃣ Run the frontend application
 ``` bash
 npm run dev
-``` 
+```
