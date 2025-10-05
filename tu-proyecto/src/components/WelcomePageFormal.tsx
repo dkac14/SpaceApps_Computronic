@@ -266,48 +266,20 @@ export default function WelcomePageFormal({
           </div>
         </div>
 
-        <div
-      style={{
-        position: "relative",
-        width: "100%",
-        height: 0,
-        paddingTop: "56.25%",
-        boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
-        marginTop: "1.6em",
-        marginBottom: "0.9em",
-        overflow: "hidden",
-        borderRadius: "8px",
-        willChange: "transform",
-      }}
-    >
+<div className="order-first md:order-last">
+  <div className="w-full h-64 md:h-80 rounded-xl border border-black/10 bg-white shadow-sm flex items-center justify-center">
+    <div className="relative w-full h-full rounded-xl overflow-hidden">
       <iframe
-        loading="lazy"
-        style={{
-          position: "absolute",
-          width: "100%",
-          height: "100%",
-          top: 0,
-          left: 0,
-          border: "none",
-          padding: 0,
-          margin: 0,
-        }}
-        src="https://www.canva.com/design/DAG08AQxMUI/ssKJXJPki36wH5D1ickSBw/view?embed"
+        className="absolute inset-0 w-full h-full"
+        src="https://www.youtube.com/embed/uZQcQdk-nmI?autoplay=1&mute=1&loop=1&playlist=uZQcQdk-nmI&controls=0&modestbranding=1&rel=0&playsinline=1"
+        title="YouTube embed"
+        allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
         allowFullScreen
       />
+    </div>
+  </div>
 </div>
-
-<p className="text-center text-sm text-gray-600 mt-2">
-  <a
-    href="https://www.canva.com/design/DAG08AQxMUI/ssKJXJPki36wH5D1ickSBw/view?utm_content=DAG08AQxMUI&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="underline text-emerald-700 hover:text-emerald-900"
-  >
-    The Solar System Science Educational Presentation in Dark Gray Animated Video Style
-  </a>{" "}
-  by Domenica Katherine Amores Cedeño
-</p>
+              
       </section>
 
       <section className="max-w-7xl mx-auto px-6 pb-12">
