@@ -1,4 +1,4 @@
-# 🚀 SpaceApps Computronic (English Translation)
+# 🚀 SpaceApps Computronic
 
 This project was developed for the **NASA Space Apps Challenge**.  
 The goal is to create an **AI-powered interactive dashboard** that allows users to explore, summarize, and visualize scientific publications related to biological experiments conducted in space.
@@ -57,7 +57,7 @@ python -m venv .venv
 ```
 For Windows (CMD):
 ``` bash
-.venv\Scripts\Activate.ps1
+.venv\Scripts\activate
 ``` 
 For Linux / Mac:
 ``` bash
